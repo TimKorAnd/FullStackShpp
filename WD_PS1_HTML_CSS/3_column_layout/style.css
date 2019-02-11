@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh; /*why percent not affect?*/
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -16,19 +16,17 @@ body {
   font-family: Helvetica;
   text-align: center;
   padding: 1rem;
-
 }
 
 .flex-content {
   flex: 1 1 auto;  /*for middle element from "body flex column"  -grow=1 -shrink=1 -basis=auto*/
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
   align-items: stretch;
 }
 
 .flex-content__column{
-	/*flex: 1 0 auto; */   /*row.  How to get rid of scroll bar when window width decrease?*/
-  flex: 1 1 0; 
+  flex: 1 1 0;
 }
 
 header, footer {

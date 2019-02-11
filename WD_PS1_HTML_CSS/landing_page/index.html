@@ -95,18 +95,20 @@
     <h3 class="footer__headline">Further are many "input" forms..</h3>
     <form>
       <fieldset>
-        <legend>Input Type Text</legend>
+        <legend>Input Types: Text, Tel</legend>
         <label for="firstname">First name:</label><br>
         <input type="text" name="firstname" id="firstname"><br>
         <label for="lastname">Last name:</label><br>
-        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="lastname" id="lastname"><br>
+        <label for="tel-input">Enter your cellular number:</label><br>
+        <input type="tel" name="usrtel" id="tel-input">
       </fieldset>
     </form>
     <br>
     
     <form>
       <fieldset>
-        <legend>Input Type Password</legend>
+        <legend>Input Types: Text, Password</legend>
         <label for="username">User name:</label><br>
         <input type="text" name="username" id="username"><br>
         <label for="password">User password:</label><br>
@@ -117,21 +119,28 @@
     
     <form action="">
       <fieldset>
-        <legend>Input Type Submit</legend>
+        <legend>Input Types: Submit, Reset</legend>
         <label for="submit__firstname">First name:</label><br>
-        <input type="text" name="firstname" value="enter first name" id="submit__firstname"><br>
+        <input type="text" name="firstname" value="enter first name" id="submit__firstname" placeholder="name"><br>
         <label for="submit__lastname">Last name:</label><br>
         <input type="text" name="lastname" value="enter last name" id="submit__lastname"><br><br>
         <input type="submit" value="Submit">
+        <input type="reset">
       </fieldset>
     </form>
     <br>
     
     <form>
       <fieldset>
-        <legend>Input Type Email</legend>
+        <legend>Input Types: Email, Checkbox, Url</legend>
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email"><br>
+        <input type="checkbox" name="spam" value="spam-agree" checked id="spam-agree">
+        <label for="spam-agree"> Agree to receive spam</label><br>
+        <input type="checkbox" name="old" value="old" id="old">
+        <label for="old"> Im older 18</label><br>
+        <label for="adult-site"> Prove it, enter any adult site</label><br>
+        <input type="url" name="adult-site" id="adult-site">
       </fieldset>
     </form>
     <br>
@@ -147,39 +156,50 @@
     
     <form>
       <fieldset>
-        <legend>Input Type Date</legend>
+        <legend>Input Types: Date, Datetime-local, Week</legend>
         <label for="date-input">Birthday (month and year):</label>
-        <input type="date" name="bdaymonth" id="date-input">
+        <input type="date" name="bdaymonth" id="date-input"><br>
+        <label for="datetime-local">Birthday as mam tells(date and time):</label>
+        <input type="datetime-local" name="bdaytime" id="datetime-local"><br>
+        <label for="week_year">Week & Year </label><br>
+        <input type="week" name="week_year" id="week_year">
       </fieldset>
     </form>
     <br>
     
     <form>
       <fieldset>
-        <legend>Input Type Number</legend>
+        <legend>Input Types: Number, Time</legend>
         <label for="quantity">Quantity (between 1 and 5):</label>
-        <input type="number" name="quantity" min="1" max="5" id="quantity">
+        <input type="number" name="quantity" min="1" max="5" id="quantity"><br>
+        <label for="time-input">what time is it?:</label>
+        <input type="time" name="usr_time" id="time-input">
       </fieldset>
     </form>
     <br>
     
     <form>
       <fieldset>
-        <legend> Input Type Search</legend>
+        <legend> Input Types: Search, Range</legend>
         <label for="serch">Search Google:</label>
-        <input type="search" name="googlesearch" id="serch">
+        <input type="search" name="googlesearch" id="serch"><br>
+        <label for="serch">How importent is it?:</label>
+        <input type="range" name="points" min="0" max="100">
       </fieldset>
     </form>
     <br>
     
     <form>
       <fieldset>
-        <legend> Radio Button Input </legend>
+        <legend> Radio Button Input, Color </legend>
         <input type="radio" name="gender" value="male" checked id="male">
         <label for="male">Male</label>
         <br>
         <input type="radio" name="gender" value="female" id="female">
         <label for="female">Female</label>
+        <br>
+        <label for="color-input">Select your favorite color:</label>
+        <input type="color" name="favcolor" id="color-input" value="#3b7a11">
         <br>
       </fieldset>
       <br>

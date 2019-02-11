@@ -108,6 +108,10 @@ header .container{
   padding-top: 20px;
 }
 
-* input[type="submit"], input[type="file"], input[type="radio"], [type="button"]{
+* input[type="submit"], input[type="file"],
+  input[type="radio"], input[type="button"],
+  input[type="reset"], input[type="checkbox"],
+  input[type="file"], input[type="color"]{
   cursor: pointer;
 }
+

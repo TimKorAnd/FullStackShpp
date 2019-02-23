@@ -14,10 +14,10 @@
 
 </head>
 <body>
-<header>
+<header class="header">
   <div class="container">
     <div class="header__logo">
-      <img src="img/logo.png" alt="Logo" width="100px">
+      <img src="img/logo.png" alt="Logo" width="100">
       <h1>++</h1>
     </div>
     <div class="header__menu">
@@ -27,13 +27,12 @@
     </div>
   </div>
 </header>
-
-<section class="block-1">
+<section class="main-block">
   <div class="container">
-    <div class="block-1__img">
-      <img src="img/main-bird.png" alt="Hummingbird" width="300px">
+    <div class="main-block__img">
+      <img src="img/iphone2.png" alt="bird_in_cell" width="190">
     </div>
-    <div class="block-1__about">
+    <div class="main-block__about">
       <h2>The awesome bird is ready to fly</h2>
       <p>Hummingbirds are birds native to the Americas and constitute
         <br> the biological family Trochilidae. They are among the smallest
@@ -41,17 +40,17 @@
         <br> the smallest extant bird species, is a hummingbird the 5 cm bee
         <br> hummingbird weighing less than 2.0 g.
       </p>
-      <button type="button">Got it.</button>
-    
+      <form action="">
+        <button class="btn main-block__btn" type="button" value="main-btn">Got it.</button>
+      </form>
     </div>
   </div>
-
 </section>
 
-<section  class="block-2">
+<section  class="article-block">
   <div class="container">
-    <div class="block-2__web-dev">
-      <div class="block-2__awesome-icon">
+    <div class="article-block__web-dev">
+      <div class="article-block__awesome-icon">
         <i class="fas fa-dove" ></i>
       </div>
       <h3>Web development</h3>
@@ -60,10 +59,11 @@
         Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.
         Lorem ipsum dolor sit amet, in duis metus,
         inceptos sit sit, sapien donec, vestibulum neque laoreet sed, id urna ac per vivamus sed libero.
-        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.</p>
+        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.
+      </p>
     </div>
-    <div class="block-2__mob-dev">
-      <div class="block-2__awesome-icon">
+    <div class="article-block__mob-dev">
+      <div class="article-block__awesome-icon">
         <i class="fas fa-kiwi-bird"></i>
       </div>
       <h3>Mobile development</h3>
@@ -75,24 +75,24 @@
         Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.
         Lorem ipsum dolor sit amet, in duis metus,
         inceptos sit sit, sapien donec, vestibulum neque laoreet sed, id urna ac per vivamus sed libero.
-        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.</p>
+        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.
+      </p>
     </div>
-    <div class="block-2__highload">
-      <div class="block-2__awesome-icon">
+    <div class="article-block__highload">
+      <div class="article-block__awesome-icon">
         <i class="fas fa-crow"></i>
       </div>
       <h3>Highload</h3>
       <p>Lorem ipsum dolor sit amet, in duis metus,
         inceptos sit sit, sapien donec, vestibulum neque laoreet sed, id urna ac per vivamus sed libero.
-        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.</p>
+        Metus sed fusce augue, ac sociis libero massa mi wisi. Integer nunc libero sed.
+      </p>
     </div>
   </div>
 </section>
-
-<footer class="footer">
+<input-block class="input-block">
   <div class="container">
-    
-    <h3 class="footer__headline">Further are many "input" forms..</h3>
+    <h3 class="input-block__headline">Further are many "input" forms..</h3>
     <form>
       <fieldset>
         <legend>Input Types: Text, Tel</legend>
@@ -105,8 +105,7 @@
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend>Input Types: Text, Password</legend>
         <label for="username">User name:</label><br>
@@ -116,7 +115,6 @@
       </fieldset>
     </form>
     <br>
-    
     <form action="">
       <fieldset>
         <legend>Input Types: Submit, Reset</legend>
@@ -124,16 +122,15 @@
         <input type="text" name="firstname" value="enter first name" id="submit__firstname" placeholder="name"><br>
         <label for="submit__lastname">Last name:</label><br>
         <input type="text" name="lastname" value="enter last name" id="submit__lastname"><br><br>
-        <input type="submit" value="Submit">
-        <input type="reset">
+        <input class="btn" type="submit" value="Submit">
+        <input class="btn" type="reset">
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend>Input Types: Email, Checkbox, Url</legend>
-        <label for="email">E-mail:</label>
+        <label for="email">E-mail:</label><br>
         <input type="email" name="email" id="email"><br>
         <input type="checkbox" name="spam" value="spam-agree" checked id="spam-agree">
         <label for="spam-agree"> Agree to receive spam</label><br>
@@ -144,8 +141,7 @@
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend>Input Type file</legend>
         <label for="fileupload">Select a file:</label>
@@ -153,43 +149,39 @@
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend>Input Types: Date, Datetime-local, Week</legend>
-        <label for="date-input">Birthday (month and year):</label>
+        <label for="date-input">Birthday (month and year):</label><br>
         <input type="date" name="bdaymonth" id="date-input"><br>
-        <label for="datetime-local">Birthday as mam tells(date and time):</label>
+        <label for="datetime-local">Birthday as mama tells(date and time):</label><br>
         <input type="datetime-local" name="bdaytime" id="datetime-local"><br>
         <label for="week_year">Week & Year </label><br>
         <input type="week" name="week_year" id="week_year">
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend>Input Types: Number, Time</legend>
-        <label for="quantity">Quantity (between 1 and 5):</label>
+        <label for="quantity">Quantity (between 1 and 5):</label><br>
         <input type="number" name="quantity" min="1" max="5" id="quantity"><br>
-        <label for="time-input">what time is it?:</label>
+        <label for="time-input">what time is it?:</label><br>
         <input type="time" name="usr_time" id="time-input">
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend> Input Types: Search, Range</legend>
-        <label for="serch">Search Google:</label>
-        <input type="search" name="googlesearch" id="serch"><br>
-        <label for="serch">How important is it?:</label>
-        <input type="range" name="points" min="0" max="100">
+        <label for="search">Search Google:</label><br>
+        <input type="search" name="googlesearch" id="search"><br>
+        <label for="search__impotance">How important is it?:</label><br>
+        <input type="range" name="points" id="search__impotance" min="0" max="100">
       </fieldset>
     </form>
     <br>
-    
-    <form>
+    <form action="">
       <fieldset>
         <legend> Radio Button Input, Color, Image </legend>
         <input type="radio" name="gender" value="male" checked id="male">
@@ -201,17 +193,17 @@
         <label for="color-input">Select your favorite color:</label>
         <input type="color" name="favcolor" id="color-input" value="#3b7a11"><br>
         <label for="img-input">Press image for submit:</label><br>
-        <input type="image" name="img-input" id="img-input" value="img-input" src="img/submit.png" alt="submit">
+        <input type="image" name="img-input" id="img-input" src="img/submit.png" alt="submit">
         <br>
       </fieldset>
       <br>
-      <input type="button" name="button__send-email" value="Send email">
+      <fieldset>
+        <legend> Button, Hidden </legend>
+        <input class="btn" type="button" name="button__send-email" value="Send email">
+        <input type="hidden" id="custId" name="custId" value="0711">
+      </fieldset>
     </form>
-  
   </div>
-
-</footer>
-
-
+</input-block>
 </body>
 </html>

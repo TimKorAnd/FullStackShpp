@@ -34,11 +34,11 @@
     </div>
     <div class="main-block__about">
       <h2>The awesome bird is ready to fly</h2>
-      <p>Hummingbirds are birds native to the Americas and constitute
-        <br> the biological family Trochilidae. They are among the smallest
-        <br> of birds, most species measuring 7.5–13 cm in length. Indeed,
-        <br> the smallest extant bird species, is a hummingbird the 5 cm bee
-        <br> hummingbird weighing less than 2.0 g.
+      <p>Hummingbirds are birds native to the Americas and constitute<br>
+         the biological family Trochilidae. They are among the smallest<br>
+         of birds, most species measuring 7.5–13 cm in length. Indeed,<br>
+         the smallest extant bird species, is a hummingbird the 5 cm bee<br>
+         hummingbird weighing less than 2.0 g.<br>
       </p>
       <form action="">
         <button class="btn main-block__btn" type="button" value="main-btn">Got it.</button>
@@ -93,116 +93,111 @@
 <section class="input-block">
   <div class="container">
     <h3 class="input-block__headline">Further are many "input" forms..</h3>
-    <form>
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Text, Tel</legend>
-        <label for="firstname">First name:</label><br>
-        <input type="text" name="firstname" id="firstname" placeholder="enter first name"><br>
-        <label for="lastname">Last name:</label><br>
-        <input type="text" name="lastname" id="lastname" placeholder="enter last name"><br>
-        <label for="tel-input">Enter your cellular number:</label><br>
-        <input type="tel" name="usrtel" id="tel-input"placeholder="+38(***)***-**-**">
+        <label class="input-block__label" for="firstname">First name:</label>
+        <input class="input-block__input" type="text" name="firstname" id="firstname" placeholder="enter first name">
+        <label class="input-block__label" for="lastname">Last name:</label>
+        <input class="input-block__input" type="text" name="lastname" id="lastname" placeholder="enter last name">
+        <label class="input-block__label" for="tel-input">Enter your cellular number:</label>
+        <input class="input-block__input" type="tel" name="usrtel" id="tel-input"placeholder="+38(***)***-**-**">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Text, Password</legend>
-        <label for="username">User name:</label><br>
-        <input type="text" name="username" id="username"><br>
-        <label for="password">User password:</label><br>
-        <input type="password" name="psw" id="password">
+        <label class="input-block__label" for="username">User name:</label>
+        <input class="input-block__input" type="text" name="username" id="username">
+        <label class="input-block__label" for="password">User password:</label>
+        <input class="input-block__input" type="password" name="psw" id="password">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Submit, Reset</legend>
-        <label for="submit__firstname">First name:</label><br>
-        <input type="text" name="firstname" id="submit__firstname" placeholder="enter first name"><br>
-        <label for="submit__lastname">Last name:</label><br>
-        <input type="text" name="lastname" id="submit__lastname" placeholder="enter last name"><br><br>
+        <label class="input-block__label" for="submit__firstname">First name:</label>
+        <input class="input-block__input" type="text" name="firstname" id="submit__firstname" placeholder="enter first name">
+        <label class="input-block__label" for="submit__lastname">Last name:</label>
+        <input class="input-block__input" type="text" name="lastname" id="submit__lastname" placeholder="enter last name">
         <input class="btn" type="submit" value="Submit">
         <input class="btn" type="reset">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Email, Checkbox, Url</legend>
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email" id="email"><br>
+        <label class="input-block__label" for="email">E-mail:</label>
+        <input class="input-block__input" type="email" name="email" id="email">
         <input type="checkbox" name="spam" value="spam-agree" checked id="spam-agree">
-        <label for="spam-agree"> Agree to receive spam</label><br>
-        <input type="checkbox" name="old" value="old" id="old">
-        <label for="old"> Im older 18</label><br>
-        <label for="adult-site"> Prove it, enter any adult site</label><br>
-        <input type="url" name="adult-site" id="adult-site" placeholder="i.e. http://kiroe.com.ua/">
+        <label for="spam-agree"> Agree to receive spam</label>
+        <div>
+          <input type="checkbox" name="old" value="old" id="old">
+          <label for="old"> Im older 18</label>
+        </div>
+        <label class="input-block__label" for="adult-site"> Prove it, enter any adult site</label>
+        <input class="input-block__input" type="url" name="adult-site" id="adult-site" placeholder="i.e. http://kiroe.com.ua/">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Type file</legend>
-        <label for="fileupload">Select a file:</label>
-        <input type="file" name="myFile" id="fileupload">
+        <label class="input-block__label" for="fileupload">Select a file:</label>
+        <input class="input-block__input" type="file" name="myFile" id="fileupload">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Date, Datetime-local, Week</legend>
-        <label for="date-input">Birthday (month and year):</label><br>
-        <input type="date" name="bdaymonth" id="date-input"><br>
-        <label for="datetime-local">Birthday as mama tells(date and time):</label><br>
-        <input type="datetime-local" name="bdaytime" id="datetime-local"><br>
-        <label for="week_year">Week & Year </label><br>
-        <input type="week" name="week_year" id="week_year">
+        <label class="input-block__label" for="date-input">Birthday (month and year):</label>
+        <input class="input-block__input" type="date" name="bdaymonth" id="date-input">
+        <label class="input-block__label" for="datetime-local">Birthday as mama tells(date and time):</label>
+        <input class="input-block__input" type="datetime-local" name="bdaytime" id="datetime-local">
+        <label class="input-block__label" for="week_year">Week & Year </label>
+        <input class="input-block__input" type="week" name="week_year" id="week_year">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend>Input Types: Number, Time</legend>
-        <label for="quantity">Quantity (between 1 and 5):</label><br>
-        <input type="number" name="quantity" min="1" max="5" id="quantity"><br>
-        <label for="time-input">what time is it?:</label><br>
-        <input type="time" name="usr_time" id="time-input">
+        <label class="input-block__label" for="quantity">Quantity (between 1 and 5):</label>
+        <input class="input-block__input" type="number" name="quantity" min="1" max="5" id="quantity">
+        <label class="input-block__label" for="time-input">what time is it?:</label>
+        <input class="input-block__input" type="time" name="usr_time" id="time-input">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend> Input Types: Search, Range</legend>
-        <label for="search">Search Google:</label><br>
-        <input type="search" name="googlesearch" id="search"><br>
-        <label for="search__impotance">How important is it?:</label><br>
-        <input type="range" name="points" id="search__impotance" min="0" max="100">
+        <label class="input-block__label" for="search">Search Google:</label>
+        <input class="input-block__input" type="search" name="googlesearch" id="search">
+        <label class="input-block__label" for="search__impotance">How important is it?:</label>
+        <input class="input-block__input" type="range" name="points" id="search__impotance" min="0" max="100">
       </fieldset>
     </form>
-    <br>
-    <form action="">
+    <form class="input-block__form">
       <fieldset>
         <legend> Radio Button Input, Color, Image </legend>
         <input type="radio" name="gender" value="male" checked id="male">
         <label for="male">Male</label>
-        <br>
-        <input type="radio" name="gender" value="female" id="female">
-        <label for="female">Female</label>
-        <br>
-        <label for="color-input">Select your favorite color:</label>
-        <input type="color" name="favcolor" id="color-input" value="#3b7a11"><br>
-        <label for="img-input">Press image for submit:</label><br>
-        <input type="image" name="img-input" id="img-input" src="img/submit.png" alt="submit">
-        <br>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend> Button, Hidden </legend>
-        <input class="btn" type="button" name="button__send-email" value="Send email">
-        <input type="hidden" id="custId" name="custId" value="0711">
+        <div>
+          <input  type="radio" name="gender" value="female" id="female">
+          <label  for="female">Female</label>
+        </div>
+        <label class="input-block__label" for="color-input">Select your favorite color:</label>
+        <input class="input-block__input" type="color" name="favcolor" id="color-input" value="#3b7a11">
+        <label class="input-block__label" for="img-input">Press image for submit:</label>
+        <input class="input-block__input" type="image" name="img-input" id="img-input" src="img/submit.png" alt="submit">
       </fieldset>
     </form>
+    <form class="input-block__form">
+    <fieldset>
+      <legend> Button, Hidden </legend>
+      <input class="btn input-block__input" type="button" name="button__send-email" value="Send email">
+      <input class="input-block__input" type="hidden" id="custId" name="custId" value="0711">
+    </fieldset>
+    </form>
+    
   </div>
 </section>
 </body>
